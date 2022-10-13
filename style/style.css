@@ -1,0 +1,38 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    background-color: rgb(132, 175, 175);
+}
+
+.button{
+    color:azure ;
+    cursor: pointer;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, .1),0 3px 6px rgba(0, 0, 0, .05);
+    background-image: linear-gradient(#464d55, #25292e);
+    width: 165px;
+    height: 50px;
+    border-radius: 8px;
+    margin-top: 15%;  
+}
+
+p{
+    margin-bottom: -10%;
+}
+
+.button:hover{
+    color: white;
+    background-image: linear-gradient(#759864, #5d8860);
+    width: 160px;
+    height: 45px;
+
+}
+
+.button::after {
+    content: "Pasa por encima";
+}
+
+.button:hover::after {
+    content: "¡Hecho!";
+}
+
